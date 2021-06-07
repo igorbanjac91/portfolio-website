@@ -1,0 +1,11 @@
+button {
+  font-family: "Roboto";
+}
+
+.about-me-btn {
+  margin-top: 30px;
+  padding: 6px 50px;
+  background-color: $secondary-dark;
+  border: 1px solid $border-light;
+  color: $primary-light;
+}

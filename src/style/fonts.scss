@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format('truetype');
+  font-weight: 400; 
+  font-style: normal;
+}
+
+body {
+  font-family: "Roboto";
+  color: $primary-light;
+}
+
+h1, h2 {
+  font-family: "Montserrat";
+  font-size: 1.8em;
+}
+
+h1 > span {
+  color: $contrast;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-light;
+}

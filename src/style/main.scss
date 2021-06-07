@@ -1,0 +1,64 @@
+@import 'reset';
+@import 'variables';
+@import 'fonts';
+@import 'buttons';
+
+// Other
+
+body {
+  background-color: $secondary-dark;
+}
+
+.fa-bars {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.hero {
+  nav {
+    position: relative;
+    height: 30px;
+    padding: 8px;
+    .fa-bars {
+      float: right;
+      margin-right: 10px;
+    }
+  }
+  main {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+.main-nav ul{
+  height: 0px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  left: 0;
+  transition: height 300ms ease-in-out 0s;
+  a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid $primary-dark;
+  }
+}
+
+.main-nav ul.show-menu {
+  height: 200px;
+}
+

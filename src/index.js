@@ -2,8 +2,7 @@ import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
-import './reset.scss'
-import './style.scss'
+import './style/main.scss'
 
 // Burger menu
 let body = document.querySelector("body");
