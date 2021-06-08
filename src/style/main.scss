@@ -146,7 +146,6 @@ body {
   &__nav {
 
     li {
-      // position: relative;
       display: flex;
       align-items: center;
     }
@@ -242,7 +241,7 @@ body {
   }
 }
 
-/* --------------------- CONTACT --------------------- */
+/* --------------------- FOOTER --------------------- */
 
 .footer {
   position: relative;
@@ -323,3 +322,7 @@ body {
   color: $primary-dark;
   background-color: $contrast;
 }
+
+
+@import 'tablet';
+@import 'desktop';
