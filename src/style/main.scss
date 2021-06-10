@@ -16,6 +16,10 @@
 
 /* --------------------- GENERAL --------------------- */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $primary-dark;
 }

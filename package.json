@@ -27,6 +27,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "emailjs-com": "^3.0.2",
     "file-loader": "^6.2.0"
   }
 }

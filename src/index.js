@@ -3,6 +3,8 @@ import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 import './style/main.scss'
+import { init, sendForm } from 'emailjs-com';
+init("user_FbtbT5YO2byoewUy3V5VE");
 
 // Images
 
@@ -75,3 +77,14 @@ menuBtn.addEventListener("click", function toggleMenu(e) {
   menu.classList.toggle("show-menu");
 });
 
+// Email 
+
+// document.getElementById('contact-form').addEventListener('submit', function(event) {
+//   event.preventDefault();
+//   sendForm('service_k8j0bu5','template_oqnlwqk', this )
+// 	.then(function(response) {
+// 	   console.log('SUCCESS!', response.status, response.text);
+// 	}, function(err) {
+// 	   console.log('FAILED...', err);
+// 	});
+// })
