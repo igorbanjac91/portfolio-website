@@ -25,11 +25,14 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
-    "emailjs-com": "^3.0.2",
-    "file-loader": "^6.2.0",
-    "gh-pages": "^3.2.0",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "css-loader": "^5.2.6",
+    "sass": "^1.34.1",
+    "sass-loader": "^12.0.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.39.1",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
   }
