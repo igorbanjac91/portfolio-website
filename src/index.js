@@ -18,13 +18,13 @@ import GitLogo from './images/git.svg';
 import BashLogo from './images/bash.svg';
 import BootstrapLogo from './images/bootstrap.svg';
 import FigmaLogo from './images/figma.svg';
+import planetFact from './images/screenshots/planets-desktop.png';
 
 // Burger menu
 
 let menuBtn = document.querySelector(".menu-btn");
 let menu = document.querySelector("#menu");
 let logosContainer = document.querySelector('.logos-container');
-
 
 // Logo Images
 
@@ -76,6 +76,14 @@ menuBtn.addEventListener("click", function toggleMenu(e) {
   e.preventDefault();
   menu.classList.toggle("show-menu");
 });
+
+let websiteImage = document.createElement("li");
+websiteImage.classList.add("box");
+websiteImage.style.backgroundImage = `url(${planetFact})`;
+
+let projectsList = document.querySelector(".projects__list");
+projectsList.appendChild(websiteImage);
+
 
 // Email 
 
