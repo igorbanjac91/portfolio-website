@@ -1,15 +1,15 @@
 const path = require('path');
 
 module.exports = {
-  entry: "./src/index.js",
-  devtool: "inline-source-map",
-  devServer: {
-    contentBase: './dist'
-  },
+  entry: './src/index.js',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, "dist"),
-    publicPath: "/portfolio-website/",
+    path: path.resolve(__dirname, 'dist')
+  },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist'
+    // reload: true
   },
   module: {
     rules: [
@@ -22,7 +22,7 @@ module.exports = {
         loader: 'file-loader',
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
       {

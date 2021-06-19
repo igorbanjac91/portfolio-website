@@ -85,6 +85,9 @@ let projectsList = document.querySelector(".projects__list");
 projectsList.appendChild(websiteImage);
 
 
+console.log(websiteImage)   
+
+
 // Email 
 
 // document.getElementById('contact-form').addEventListener('submit', function(event) {
