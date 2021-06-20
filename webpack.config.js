@@ -2,14 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  // entry: './src/index.js',
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    planets: './src/planets.js'
   },
-  // output: {
-  //   filename: 'main.js',
-  //   path: path.resolve(__dirname, 'dist')
-  // },
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, 'dist')
@@ -24,6 +20,12 @@ module.exports = {
       inject: true,
       chunks: ['index'],
       filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/planets-app-about.html',
+      inject: true,
+      chunks: ['planets'],
+      filename: 'planets-app-about.html'
     })
   ],
   module: {

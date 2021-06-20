@@ -82,7 +82,7 @@ let planetFactWebsite = document.createElement("a");
 planetFactWebsiteItem.appendChild(planetFactWebsite);
 planetFactWebsite.classList.add("box");
 planetFactWebsite.style.backgroundImage = `url(${planetFact})`;
-planetFactWebsite.href = "https://igorbanjac91.github.io/planet-fact-site/"
+planetFactWebsite.href = "planets-app-about.html"
 
 let projectsList = document.querySelector(".projects__list");
 projectsList.appendChild(planetFactWebsiteItem);
