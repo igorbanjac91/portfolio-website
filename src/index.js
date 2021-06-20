@@ -77,15 +77,16 @@ menuBtn.addEventListener("click", function toggleMenu(e) {
   menu.classList.toggle("show-menu");
 });
 
-let websiteImage = document.createElement("li");
-websiteImage.classList.add("box");
-websiteImage.style.backgroundImage = `url(${planetFact})`;
+let planetFactWebsiteItem = document.createElement("li");
+let planetFactWebsite = document.createElement("a");
+planetFactWebsiteItem.appendChild(planetFactWebsite);
+planetFactWebsite.classList.add("box");
+planetFactWebsite.style.backgroundImage = `url(${planetFact})`;
+planetFactWebsite.href = "https://igorbanjac91.github.io/planet-fact-site/"
 
 let projectsList = document.querySelector(".projects__list");
-projectsList.appendChild(websiteImage);
+projectsList.appendChild(planetFactWebsiteItem);
 
-
-console.log(websiteImage)   
 
 
 // Email 
