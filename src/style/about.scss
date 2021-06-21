@@ -17,6 +17,12 @@
 
 .planets-about {
   background-color: $primary-dark;
+  
+  h1 {
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
 }
 
 
@@ -34,10 +40,11 @@
   margin-bottom: 40px;
 
   nav {
-    background-color: $secondary-dark;
     position: relative;
     height: 30px;
     padding: 8px;
+    margin-bottom: 40px;
+    background-color: $secondary-dark;
     .fa-bars {
       float: right;
       margin-right: 10px;
@@ -91,4 +98,72 @@
 
 .main-nav ul.show-menu {
   height: 150px;
+}
+
+/* --------------------- CAROUSEL --------------------- */
+
+
+.carousel {
+  position: relative;
+  height: 400px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 15px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  &__track {
+    list-style: none;
+    
+  }
+  
+  &__track-container {
+    height: 100%;
+    position: relative;
+  }
+  
+  [class*="slide-"] {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__button--left {
+    left: 0;
+  }
+
+  &__button--right {
+    right: 0;
+  }
+  
+  &__nav {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  &__indicator {
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: hsla(255, 255, 255, .3);
+    margin: 0 10px;
+  }
+
+  &__indicator.current-slide {
+    background: hsla(255, 255, 255, .8);
+  }
 }
