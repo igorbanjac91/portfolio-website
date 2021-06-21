@@ -1,0 +1,94 @@
+@import 'reset';
+@import 'variables';
+@import 'typography';
+@import 'buttons';
+
+/* ------------- Index --------------
+
+- General
+- Nav
+- Carousel
+- About
+
+*/
+
+/* --------------------- GENERAL --------------------- */
+
+
+.planets-about {
+  background-color: $primary-dark;
+}
+
+
+/* --------------------- NAV --------------------- */
+
+
+
+.fa-bars {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.hero {
+  margin-bottom: 40px;
+
+  nav {
+    background-color: $secondary-dark;
+    position: relative;
+    height: 30px;
+    padding: 8px;
+    .fa-bars {
+      float: right;
+      margin-right: 10px;
+    }
+  }
+
+  main {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+
+}
+
+.main-nav {
+
+  > a:first-child {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  ul {
+    background-color: $secondary-dark;
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    transition: height 300ms ease-in-out 0s;
+
+
+    a {
+      display: inline-block;
+      width: 100%;
+      padding: 10px;
+      padding-left: 20px;
+      text-transform: uppercase;
+      border-bottom: 1px solid $primary-dark;
+    }
+
+    > li:last-child a {
+      border-bottom: none;
+    }
+  }
+}
+
+.main-nav ul.show-menu {
+  height: 150px;
+}

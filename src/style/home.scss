@@ -78,6 +78,10 @@ body {
     border-bottom: 1px solid $primary-dark;
   }
 
+  > li:last-child a {
+    border-bottom: none;
+  }
+
 }
 
 .main-nav ul.show-menu {
