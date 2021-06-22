@@ -85,7 +85,8 @@ body {
 }
 
 .main-nav ul.show-menu {
-  height: 200px;
+  height: 150px;
+  z-index: 99;
 }
 
 /* --------------------- ABOUT --------------------- */

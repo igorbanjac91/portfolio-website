@@ -21,7 +21,6 @@ let slides = Array.from(track.children);
 let slide1 = document.querySelector(".carousel__slide-1");
 let slide2 = document.querySelector(".carousel__slide-2");
 let slide3 = document.querySelector(".carousel__slide-3");
-let slidesLength = slides.length;
 let rightEdgeSlide;
 let leftEdgeSlide;
 
@@ -42,11 +41,11 @@ slide3.appendChild(desktopScreenshot);
 
 const slideWidth = slide1.getBoundingClientRect().width;
 
-
 addEdgeSlides(slide1, slide3)
 
 slides.forEach(setSlidePosition);
 
+// ---------------------------- Events ------------------------------------
 
 rightButton.addEventListener("click", e => {
   if (translationComplete) {
@@ -115,6 +114,8 @@ carouselNav.addEventListener("click", e => {
   }
 })
 
+// ---------------------------- Functions ------------------------------------
+
 function addEdgeSlides(firstSlide, lastSlide) {
   rightEdgeSlide = firstSlide.cloneNode(true);
   rightEdgeSlide.classList.remove("current-slide")
@@ -131,7 +132,6 @@ function addEdgeSlides(firstSlide, lastSlide) {
   track.appendChild(rightEdgeSlide);
   track.prepend(leftEdgeSlide);
 }
-
 
 
 function updateIndiactors(currentIndicator, targetIndicator) {

@@ -20,6 +20,7 @@
   
   h1 {
     margin-bottom: 40px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
   }
@@ -42,9 +43,10 @@
   nav {
     position: relative;
     height: 30px;
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 40px;
     background-color: $secondary-dark;
+    border-bottom: 1px solid $primary-light-50;
     .fa-bars {
       float: right;
       margin-right: 10px;
@@ -98,6 +100,7 @@
 
 .main-nav ul.show-menu {
   height: 150px;
+  z-index: 99;
 }
 
 /* --------------------- CAROUSEL --------------------- */
@@ -106,10 +109,9 @@
 .carousel {
   position: relative;
   height: 400px;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: 50px;
-  padding: 15px;
+  margin-bottom: 106px;
 
   img {
     width: 100%;
@@ -177,5 +179,57 @@
 
   &__indicator.current-slide {
     background: hsla(255, 255, 255, .8);
+  }
+}
+
+/* --------------------- INFO --------------------- */
+
+.planets-about {
+  
+  &__info {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      margin-top: 40px;
+    }
+
+    p {
+      line-height: 22px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+    
+    a {
+      display: flex;
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+
+    a:hover {
+      color: $contrast;
+    }
+
+    ul {
+      margin-bottom: 30px;
+      list-style: disc;
+      list-style-position: inside;
+    }
+
+    .link-to-website {
+      display: inline-block;
+      padding: 10px 20px;
+      font-weight: 600;
+      color: $primary-dark;
+      background-color: $primary-light;
+      border: 1px solid $primary-light;
+      border-radius: 3px;
+    }
   }
 }
