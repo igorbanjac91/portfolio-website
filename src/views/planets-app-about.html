@@ -17,17 +17,21 @@
 
 
   <section class="carousel">
-    <button class="carousel__button carousel__button--left">left</button>
-    <button class="carousel__button carousel__button--right">right</button>
+    <button class="carousel__button carousel__button--left">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="carousel__button carousel__button--right">
+      <i class="fas fa-chevron-right"></i>
+    </button>
     <div class="carousel__track-container">
-      <ul class="carousel__track">
-        <li class="carousel__slide-1"></li>
+      <ul class="carousel__track transition">
+        <li class="carousel__slide-1 current-slide"></li>
         <li class="carousel__slide-2"></li>
         <li class="carousel__slide-3"></li>
       </ul>
     </div>
     <div class="carousel__nav">
-      <button class="carousel__indicator"></button>
+      <button class="carousel__indicator current-slide"></button>
       <button class="carousel__indicator"></button>
       <button class="carousel__indicator"></button>
     </div>
