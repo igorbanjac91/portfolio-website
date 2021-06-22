@@ -66,12 +66,24 @@
 }
 
 .main-nav {
+  
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .home-link {
+    margin-left: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 
   > a:first-child {
     font-size: 16px;
     font-weight: bold;
   }
-
+  
   ul {
     background-color: $secondary-dark;
     height: 0px;
