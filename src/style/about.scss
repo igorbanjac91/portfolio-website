@@ -185,13 +185,13 @@
     border-radius: 50%;
     width: 12px;
     height: 12px;
-    background: hsla(255, 255, 255, .3);
+    background: hsla(0, 0%, 100%, .3);
     margin: 0 10px;
     cursor: pointer;
   }
 
   &__indicator.current-slide {
-    background: hsla(255, 255, 255, .8);
+    background: hsla(0, 0%, 100%, .8);
   }
 }
 
