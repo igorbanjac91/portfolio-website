@@ -1,12 +1,12 @@
 # My Portfolio
 
-My personal portfolio, here you can find my projects and get to know me a bit more
+My portfolio, here you can find my projects and get to know me a bit more
 
 Click [here](https://igorbanjac91.github.io/portfolio-website/) to see the portfolio;
 
 ## Projects
 
-- Cyber Meal
+- Planets Facts Website
 
 ## Future improvements
 

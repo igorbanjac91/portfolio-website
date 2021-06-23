@@ -38,6 +38,10 @@ body {
   margin-bottom: 40px;
   background-color: $secondary-dark;
 
+  .home-link {
+    visibility: hidden;
+  }
+
   nav {
     position: relative;
     height: 30px;
@@ -60,27 +64,31 @@ body {
 
 }
 
-.main-nav ul {
-  height: 0px;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  top: 40px;
-  left: 0;
-  transition: height 300ms ease-in-out 0s;
-
-  a {
-    display: inline-block;
+.main-nav {
+  
+  ul {
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
     width: 100%;
-    padding: 10px;
-    padding-left: 20px;
-    text-transform: uppercase;
-    border-bottom: 1px solid $primary-dark;
-  }
-
-  > li:last-child a {
-    border-bottom: none;
-  }
+    top: 40px;
+    left: 0;
+    transition: height 300ms ease-in-out 0s;
+  
+    a {
+      display: inline-block;
+      width: 100%;
+      padding: 10px;
+      padding-left: 20px;
+      text-transform: uppercase;
+      border-bottom: 1px solid $primary-dark;
+    }
+  
+    > li:last-child a {
+      border-bottom: none;
+    }
+  
+  } 
 
 }
 
@@ -102,7 +110,7 @@ body {
     margin: 0 auto;
     margin-bottom: 40px;
     background-color: #C4C4C4;
-    border-radius: 5px;
+    border-radius: 3px;
   }
 
   h2 {
@@ -240,7 +248,7 @@ body {
       background-color: $secondary-dark;
       color: $primary-light;
       border: 1px solid $border-light;
-      border-radius: 5px;
+      border-radius: 3px;
     }
 
     input::placeholder,
@@ -334,7 +342,7 @@ body {
   padding: 10px;
   font-size: 1.8em;
   border: 1px solid $primary-light;
-  border-radius: 5px;
+  border-radius: 3px;
   transition: color 100ms ease-in-out 0ms,
               background-color 100ms ease-in-out 0ms;
 }
