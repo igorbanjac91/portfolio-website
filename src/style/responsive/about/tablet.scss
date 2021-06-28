@@ -1,0 +1,69 @@
+@media (min-width: 550px) {
+  /* ------------- Index --------------
+
+  - Nav
+  - About
+  */
+
+  /* --------------------- NAV --------------------- */
+  
+  .menu-btn {
+    display: none;
+  }
+  
+  .hero {
+    
+    h1 {
+      font-size: 1.5em;
+    }
+
+    nav {
+      position: relative;
+      height: 30px;
+      padding: 8px;
+    }
+
+
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+      
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      overflow: visible;
+      position: static;
+  
+      a {
+        display: inline-block;
+        width: auto;
+        padding: 10px;
+        padding-left: 20px;
+        border-bottom: none;
+        font-size: 0.9em;
+        transition: color 100ms ease-in-out 0ms;
+      } 
+  
+      a:hover {
+        color: $contrast;
+      }
+  
+    }
+
+  }
+
+  /* --------------------- ABOUT --------------------- */
+
+  .planets-about {
+
+
+    p {
+      font-size: 1em;
+    }
+
+  }
+
+}

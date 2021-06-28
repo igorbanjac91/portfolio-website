@@ -14,10 +14,13 @@
 
 /* --------------------- GENERAL --------------------- */
 
+html {
+  height: 100%;
+}
 
 .planets-about {
   background-color: $primary-dark;
-  
+
   h1 {
     margin-bottom: 40px;
     font-size: 20px;
@@ -127,6 +130,7 @@
   margin: 0 auto;
   margin-bottom: 106px;
 
+
   img {
     width: 100%;
     height: 100%;
@@ -167,10 +171,12 @@
 
   &__button--left {
     left: 0;
+    margin-left: 2%;
   }
 
   &__button--right {
     right: 0;
+    margin-right: 2%;
   }
   
   &__nav {
@@ -193,11 +199,16 @@
   &__indicator.current-slide {
     background: hsla(0, 0%, 100%, .8);
   }
+
+  .current-slide {
+    z-index: 98;
+  }
 }
 
 /* --------------------- INFO --------------------- */
 
 .planets-about {
+
   
   &__info {
     width: 80%;
@@ -247,3 +258,98 @@
     }
   }
 }
+
+
+/* --------------------- FOOTER --------------------- */
+
+footer {
+  position: relative;
+  top: 85px
+}
+
+.footer {
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: $secondary-dark;
+  text-align: center;
+
+  nav {
+    margin: 40px auto;
+  }
+
+  small {
+    font-size: 0.9em;
+  }
+
+  span {
+    color: $contrast;
+  }
+}
+
+.social-nav {
+  max-width: 300px;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 1.4em;
+    color: $primary-dark;
+    background-color: $primary-light;
+    border-radius: 100%;
+    border: 2px solid $primary-light;
+    transition: color 100ms ease-in-out 0ms,
+                border 100ms ease-in-out 0ms,
+                text-shadow 100ms ease-in-out 0ms;
+  }
+
+  &__icon:hover {
+    border: 2px solid $contrast;
+    color: $contrast;
+    text-shadow:
+    0 0 10px #fff, 
+    0 0 20px #fff, 
+    0 0 30px $contrast, 
+    0 0 40px $contrast, 
+    0 0 50px $contrast, 
+    0 0 60px $contrast, 
+    0 0 70px $contrast,
+    0 0 90px $contrast,
+    0 0 100px $contrast;
+  }
+
+}
+
+
+.fa-chevron-up {
+  position: absolute;
+  top: -25px;
+  right: 20%;
+  padding: 10px;
+  font-size: 1.8em;
+  border: 1px solid $primary-light;
+  border-radius: 3px;
+  transition: color 100ms ease-in-out 0ms,
+  background-color 100ms ease-in-out 0ms;
+}
+
+.fa-chevron-up:hover {
+  color: $primary-dark;
+  background-color: $contrast;
+}
+
+
+.about-hidden {
+  visibility: hidden
+}
+
+@import 'responsive/about/tablet.scss';
+@import 'responsive/about/desktop.scss';

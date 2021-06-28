@@ -28,6 +28,11 @@ module.exports = {
       path: path.join(__dirname, "./src/views/partials/navigation.html"),
       location: 'navigation',
       template_filename: ['index.html', 'planets-app-about.html']
+    }),
+    new HtmlWebpackPartialsPlugin({
+      path: path.join(__dirname, "./src/views/partials/footer.html"),
+      location: 'footer',
+      template_filename: ['index.html', 'planets-app-about.html']
     })
   ],
   module: {

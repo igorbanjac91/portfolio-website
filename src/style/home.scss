@@ -162,6 +162,14 @@ body {
   }
 
   &__nav {
+    max-width: 300px;
+    margin: 0 auto;
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
 
     li {
       display: flex;
@@ -171,7 +179,6 @@ body {
     a {
       display: inline-block;
       width: 100%;
-      padding: 10px 20px;
       border-bottom: 1px solid $border-light;
       transition: color 100ms ease-in-out 0ms;
     }
@@ -279,7 +286,7 @@ body {
   text-align: center;
 
   nav {
-    margin: 40px 0;
+    margin: 40px auto;
   }
 
   small {
@@ -292,10 +299,9 @@ body {
 }
 
 .social-nav {
+  max-width: 300px;
 
   ul {
-    width: 90%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
   }
@@ -352,5 +358,5 @@ body {
 }
 
 
-@import 'tablet';
-@import 'desktop';
+@import 'responsive/home/tablet.scss';
+@import 'responsive/home/desktop.scss';
