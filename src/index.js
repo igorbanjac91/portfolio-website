@@ -26,6 +26,8 @@ import planetFact from './images/screenshots/planets-desktop.png';
 let menuBtn = document.querySelector(".menu-btn");
 let menu = document.querySelector("#menu");
 let logosContainer = document.querySelector('.logos-container');
+let myPictureBox = document.querySelector('.about__picture')
+
 
 // Logo Images
 
