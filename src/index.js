@@ -92,14 +92,14 @@ projectsList.appendChild(planetFactWebsiteItem);
 
 
 
-// Email 
+// Email
 
-// document.getElementById('contact-form').addEventListener('submit', function(event) {
-//   event.preventDefault();
-//   sendForm('service_k8j0bu5','template_oqnlwqk', this )
-// 	.then(function(response) {
-// 	   console.log('SUCCESS!', response.status, response.text);
-// 	}, function(err) {
-// 	   console.log('FAILED...', err);
-// 	});
-// })
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  sendForm('service_k8j0bu5','template_oqnlwqk', this )
+	.then(function(response) {
+	   console.log('SUCCESS!', response.status, response.text);
+	}, function(err) {
+	   console.log('FAILED...', err);
+	});
+})
