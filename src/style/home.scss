@@ -164,7 +164,7 @@ body {
   &__nav {
     max-width: 300px;
     margin: 0 auto;
-
+    margin-bottom: 20px;
     ul {
       width: 100%;
       display: flex;
@@ -179,7 +179,6 @@ body {
     a {
       display: inline-block;
       width: 100%;
-      border-bottom: 1px solid $border-light;
       transition: color 100ms ease-in-out 0ms;
     }
 
