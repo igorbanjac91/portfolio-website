@@ -98,7 +98,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   event.preventDefault();
   sendForm('service_k8j0bu5','template_oqnlwqk', this )
 	.then(function(response) {
-	   console.log('SUCCESS!', response.status, response.text);
+    alert("Email sent successfully!")
 	}, function(err) {
 	   console.log('FAILED...', err);
 	});
