@@ -10,5 +10,6 @@ import Mobile from "./images/screenshots/cyber-food-mobile.png";
 
 
 import carousel from "./components/carousel";
+import "./components/nav"
 
 carousel(Desktop, Tablet, Mobile);
