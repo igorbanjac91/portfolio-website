@@ -20,13 +20,13 @@ import BashLogo from './images/bash.svg';
 import BootstrapLogo from './images/bootstrap.svg';
 import FigmaLogo from './images/figma.svg';
 import planetFact from './images/screenshots/planets-desktop.png';
+import cyberFood from './images/screenshots/cyber-food-desktop.png';
 
 // Burger menu
 
 let menuBtn = document.querySelector(".menu-btn");
 let menu = document.querySelector("#menu");
 let logosContainer = document.querySelector('.logos-container');
-let myPictureBox = document.querySelector('.about__picture')
 
 
 // Logo Images
@@ -87,8 +87,18 @@ planetFactWebsite.classList.add("box");
 planetFactWebsite.style.backgroundImage = `url(${planetFact})`;
 planetFactWebsite.href = "planets-app-about.html"
 
+
+let cyberFoodWebsiteItem = document.createElement("li");
+let cyberFoodWebsite = document.createElement("a");
+cyberFoodWebsiteItem.appendChild(cyberFoodWebsite);
+cyberFoodWebsite.classList.add("box");
+cyberFoodWebsite.style.backgroundImage = `url(${cyberFood})`;
+cyberFoodWebsite.href = "cyber-food-about.html"
+
+
 let projectsList = document.querySelector(".projects__list");
 projectsList.appendChild(planetFactWebsiteItem);
+projectsList.appendChild(cyberFoodWebsiteItem);
 
 
 

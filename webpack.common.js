@@ -5,7 +5,8 @@ const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
 module.exports = {
   entry: {
     index: './src/index.js',
-    planets: './src/planets.js'
+    planets: './src/planets.js',
+    cyber_food: './src/cyber_food.js'
   },
   output: {
     filename: "[name].js",
@@ -24,15 +25,21 @@ module.exports = {
       chunks: ['planets'],
       filename: 'planets-app-about.html'      
     }),
+    new HtmlWebpackPlugin({
+      template: './src/views/cyber-food-about.html',
+      inject: true,
+      chunks: ['cyber_food'],
+      filename: 'cyber-food-about.html'      
+    }),
     new HtmlWebpackPartialsPlugin({
       path: path.join(__dirname, "./src/views/partials/navigation.html"),
       location: 'navigation',
-      template_filename: ['index.html', 'planets-app-about.html']
+      template_filename: ['index.html', 'planets-app-about.html', 'cyber-food-about.html']
     }),
     new HtmlWebpackPartialsPlugin({
       path: path.join(__dirname, "./src/views/partials/footer.html"),
       location: 'footer',
-      template_filename: ['index.html', 'planets-app-about.html']
+      template_filename: ['index.html', 'planets-app-about.html', 'cyber-food-about.html']
     })
   ],
   module: {
