@@ -6,7 +6,9 @@ Click [here](https://igorbanjac91.github.io/portfolio-website/) to see the portf
 
 ## Projects
 
+- Portfolio
 - Planets Facts Website
+- Cyber Food
 
 ## Future improvements
 
