@@ -10,10 +10,13 @@ menuBtn.addEventListener("click", function toggleMenu(e) {
 
 // ---------------------- Nav Links ----------------------
 
-let aboutLink = document.querySelector(`[href="#about"]`);
-let projectsLink = document.querySelector(`[href="#projects"]`);
-let contactLink = document.querySelector(`[href="#contact"]`);
+let aboutLink = document.querySelector(".about-link");
+let projectsLink = document.querySelector(".projects-link");
+let contactLink = document.querySelector(".contact-link");
 
-aboutLink.href = "/index.html#about";
-projectsLink.href = "/index.html#projects";
-contactLink.href = "/index.html#contact";
+if (aboutLink && projectsLink && contactLink ) {
+  aboutLink.href = "https://igorbanjac91.github.io/portfolio-website/#about";
+  projectsLink.href = "https://igorbanjac91.github.io/portfolio-website/#projects";
+  contactLink.href = "https://igorbanjac91.github.io/portfolio-website/#contact";
+}
+
