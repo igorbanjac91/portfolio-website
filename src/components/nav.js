@@ -8,9 +8,3 @@ menuBtn.addEventListener("click", function toggleMenu(e) {
   menu.classList.toggle("show-menu");
 });
 
-// ---------------------- Nav Links ----------------------
-
-let aboutLink = document.querySelector(".about-link");
-let projectsLink = document.querySelector(".projects-link");
-let contactLink = document.querySelector(".contact-link");
-
