@@ -14,9 +14,3 @@ let aboutLink = document.querySelector(".about-link");
 let projectsLink = document.querySelector(".projects-link");
 let contactLink = document.querySelector(".contact-link");
 
-if (aboutLink && projectsLink && contactLink ) {
-  aboutLink.href = "https://igorbanjac91.github.io/portfolio-website/#about";
-  projectsLink.href = "https://igorbanjac91.github.io/portfolio-website/#projects";
-  contactLink.href = "https://igorbanjac91.github.io/portfolio-website/#contact";
-}
-
