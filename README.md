@@ -9,11 +9,9 @@ Click [here](https://igorbanjac91.github.io/portfolio-website/) to see the portf
 - Portfolio
 - Planets Facts Website
 - Cyber Food
+- Audiophile e-commerce
 
 ## Future improvements
 
-- Add sending email after form submission;
 - Add button for switching from day to night;
-- Form validation ( avoid submission when invalid inputs );
-- Page smooth jumping;
 - header animation
