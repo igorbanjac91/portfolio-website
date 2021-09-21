@@ -6,7 +6,8 @@ module.exports = {
   entry: {
     index: './src/index.js',
     planets: './src/planets.js',
-    cyber_food: './src/cyber_food.js'
+    cyber_food: './src/cyber_food.js',
+    audiophile: './src/audiophile.js'
   },
   output: {
     filename: "[name].js",
@@ -31,15 +32,21 @@ module.exports = {
       chunks: ['cyber_food'],
       filename: 'cyber-food-about.html'      
     }),
+    new HtmlWebpackPlugin({
+      template: './src/views/audiophile-about.html',
+      inject: true,
+      chunks: ['audiophile'],
+      filename: 'audiophile-about.html'      
+    }),
     new HtmlWebpackPartialsPlugin({
       path: path.join(__dirname, "./src/views/partials/navigation.html"),
       location: 'navigation',
-      template_filename: ['index.html', 'planets-app-about.html', 'cyber-food-about.html']
+      template_filename: ['index.html', 'planets-app-about.html', 'cyber-food-about.html', 'audiophile-about.html']
     }),
     new HtmlWebpackPartialsPlugin({
       path: path.join(__dirname, "./src/views/partials/footer.html"),
       location: 'footer',
-      template_filename: ['index.html', 'planets-app-about.html', 'cyber-food-about.html']
+      template_filename: ['index.html', 'planets-app-about.html', 'cyber-food-about.html', 'audiophile-about.html']
     })
   ],
   module: {

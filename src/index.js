@@ -21,6 +21,7 @@ import BootstrapLogo from './images/bootstrap.svg';
 import FigmaLogo from './images/figma.svg';
 import planetFact from './images/screenshots/planets-desktop.png';
 import cyberFood from './images/screenshots/cyber-food-desktop.png';
+import audiophile from './images/screenshots/audiophile-desktop.png';
 
 // Burger menu
 
@@ -95,10 +96,18 @@ cyberFoodWebsite.classList.add("box");
 cyberFoodWebsite.style.backgroundImage = `url(${cyberFood})`;
 cyberFoodWebsite.href = "cyber-food-about.html"
 
+let audiophileWebsiteItem = document.createElement("li");
+let audiophileWebsite = document.createElement("a");
+audiophileWebsiteItem.appendChild(audiophileWebsite);
+audiophileWebsite.classList.add("box");
+audiophileWebsite.style.backgroundImage = `url(${audiophile})`;
+audiophileWebsite.href = "audiophile-about.html"
+
 
 let projectsList = document.querySelector(".projects__list");
 projectsList.appendChild(planetFactWebsiteItem);
 projectsList.appendChild(cyberFoodWebsiteItem);
+projectsList.appendChild(audiophileWebsiteItem);
 
 
 
