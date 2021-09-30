@@ -209,7 +209,7 @@ html {
 
 /* --------------------- INFO --------------------- */
 
-.planets-about {
+.project {
 
   
   &__info {
@@ -247,6 +247,10 @@ html {
       margin-bottom: 30px;
       list-style: disc;
       list-style-position: inside;
+
+      li {
+        margin-bottom: 8px;
+      }
     }
 
     .link-to-website {
