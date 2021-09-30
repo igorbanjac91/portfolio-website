@@ -1,7 +1,3 @@
-@import 'reset';
-@import 'variables';
-@import 'typography';
-@import 'buttons';
 
 /* ------------- Index --------------
 
@@ -350,6 +346,3 @@ footer {
 .about-hidden {
   visibility: hidden
 }
-
-@import 'responsive/about/tablet.scss';
-@import 'responsive/about/desktop.scss';

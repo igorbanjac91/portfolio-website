@@ -1,0 +1,191 @@
+@media (min-width: 550px) {
+
+  /* ------------- Index --------------
+
+  - General
+
+  - Home Page
+    - Hero & Nav
+    - About
+    - Projects
+    - Contact
+    - Footer
+
+  - Project Page
+    - 
+  */
+
+  /* ------------------------------------------
+                    GENERAL 
+  /* ------------------------------------------ */
+
+  h2 {
+    font-size: 1.7em;
+  }
+
+  /* ------------------------------------------
+                    HOME PAGE
+  /* ------------------------------------------ */
+
+  
+  /* ---------- HERO & NAV ---------- */
+
+  .hero {
+    margin-bottom: 90px;
+  }
+
+  /* ---------- ABOUT SECTION ---------- */
+
+  .about {
+    margin-bottom: 90px;
+    
+    h2 {
+      font-size: 1.7em;
+    }
+
+    &__bio {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+
+    &__picture {
+      flex: 0 0 150px; 
+      margin: 0;
+    }
+
+    &__text {
+      flex-basis: 65%;
+      text-align: left;
+    }
+
+    p {
+      width: 100%;
+    }
+
+  }
+
+  /* ---------- PROJECTS SECTION ---------- */
+
+  .projects {
+    margin-bottom: 90px;
+
+    &__nav {
+
+      ul {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      li {
+        display: inline-block;
+      }
+
+      a {
+        border: none;
+      }
+
+      .fa-chevron-down {
+        display: none;
+      }
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: 0 auto;
+
+      a {
+      }
+      
+      li {
+        flex: 0 0 300px;
+        margin: 10px;
+      }
+
+    }
+  }
+
+  /* ---------- CONTACT SECTION ---------- */
+
+  .contact {
+    margin-bottom: 90px;
+  }
+
+  /* ---------- FOOTER SECTION ---------- */
+
+  .footer {
+    
+    ul {
+      max-width: 500px;
+    }
+  }
+  
+  /* ------------------------------------------
+                  PROJECT PAGE
+  /* ------------------------------------------ */
+
+   /* ---------- NAV ---------- */
+
+   .menu-btn {
+    display: none;
+  }
+  
+  .hero {
+    
+    h1 {
+      font-size: 1.5em;
+    }
+
+    nav {
+      position: relative;
+      height: 30px;
+      padding: 8px;
+    }
+
+
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+      
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      overflow: visible;
+      position: static;
+  
+      a {
+        display: inline-block;
+        width: auto;
+        padding: 10px;
+        padding-left: 20px;
+        border-bottom: none;
+        font-size: 0.9em;
+        transition: color 100ms ease-in-out 0ms;
+      } 
+  
+      a:hover {
+        color: $contrast;
+      }
+    }
+  }
+
+  /* ---------- ABOUT ---------- */
+
+  .planets-about {
+
+
+    p {
+      font-size: 1em;
+    }
+  }
+
+}

@@ -3,7 +3,7 @@ import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 
-import './style/home.scss'
+import './style/application.scss'
 import { init, sendForm } from 'emailjs-com';
 init("user_FbtbT5YO2byoewUy3V5VE");
 
