@@ -30,9 +30,13 @@
   
   /* ---------- HERO & NAV ---------- */
 
-  .hero {
-    margin-bottom: 90px;
+  .home {
+
+    .hero {
+      margin-bottom: 90px;
+    }
   }
+
 
   /* ---------- ABOUT SECTION ---------- */
 
@@ -99,9 +103,6 @@
       flex-wrap: wrap;
       width: 90%;
       margin: 0 auto;
-
-      a {
-      }
       
       li {
         flex: 0 0 300px;
@@ -137,7 +138,7 @@
   }
   
   .hero {
-    
+
     h1 {
       font-size: 1.5em;
     }

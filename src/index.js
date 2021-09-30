@@ -9,16 +9,16 @@ init("user_FbtbT5YO2byoewUy3V5VE");
 
 // Images
 
-import HtmlLogo from './images/html5.svg';
-import Css3Logo from './images/css3.svg';
-import JsLogo from './images/javascript.svg';
-import ReactLogo from './images/react.svg';
-import RailsLogo from './images/rails.svg';
-import RubyLogo from './images/ruby.svg';
-import GitLogo from './images/git.svg';
-import BashLogo from './images/bash.svg';
-import BootstrapLogo from './images/bootstrap.svg';
-import FigmaLogo from './images/figma.svg';
+import HtmlLogo from './images/icons/html5.svg';
+import Css3Logo from './images/icons/css3.svg';
+import JsLogo from './images/icons/javascript.svg';
+import ReactLogo from './images/icons/react.svg';
+import RailsLogo from './images/icons/rails.svg';
+import RubyLogo from './images/icons/ruby.svg';
+import GitLogo from './images/icons/git.svg';
+import BashLogo from './images/icons/bash.svg';
+import BootstrapLogo from './images/icons/bootstrap.svg';
+import FigmaLogo from './images/icons/figma.svg';
 import planetFact from './images/screenshots/planets-desktop.png';
 import cyberFood from './images/screenshots/cyber-food-desktop.png';
 import audiophile from './images/screenshots/audiophile-desktop.png';

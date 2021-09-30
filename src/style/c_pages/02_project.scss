@@ -14,7 +14,7 @@ html {
   height: 100%;
 }
 
-.planets-about {
+.project {
   background-color: $primary-dark;
 
   h1 {
@@ -29,39 +29,52 @@ html {
 /* --------------------- NAV --------------------- */
 
 
+.project {
+  
+  #menu {
+    z-index: 100;
+  }
+
+  .hero {
+    height: 47px;
+    margin-bottom: 90px;
+
+    .home-link {
+      visibility: visible;
+      margin-left: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    nav {
+      position: relative;
+      height: 30px;
+      padding: 10px;
+      margin-bottom: 40px;
+      background-color: $secondary-dark;
+      border-bottom: 1px solid $primary-light-50;
+      .fa-bars {
+        float: right;
+        margin-right: 10px;
+      }
+    }
+  
+    main {
+      clear: both;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+    }
+  }
+}
 
 .fa-bars {
   display: inline-block;
   cursor: pointer;
   font-size: 2em;
-}
-
-.hero {
-  margin-bottom: 40px;
-
-  nav {
-    position: relative;
-    height: 30px;
-    padding: 10px;
-    margin-bottom: 40px;
-    background-color: $secondary-dark;
-    border-bottom: 1px solid $primary-light-50;
-    .fa-bars {
-      float: right;
-      margin-right: 10px;
-    }
-  }
-
-  main {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-  }
-  
 }
 
 .main-nav {
@@ -72,12 +85,6 @@ html {
     justify-content: space-between;
     max-width: 960px;
     margin: 0 auto;
-  }
-
-  .home-link {
-    margin-left: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
   }
 
   > a:first-child {
@@ -116,7 +123,6 @@ html {
 }
 
 /* --------------------- CAROUSEL --------------------- */
-
 
 .carousel {
   position: relative;
